@@ -106,12 +106,12 @@
 <span class="text-neutral-300" data-i18n="announcement">CELIBERY Exclusive Release • Free Express UAE Delivery on Orders Over AED 150</span>
 </div>
 <div class="flex items-center space-x-6 text-neutral-400">
-<button aria-label="Toggle language" class="flex items-center space-x-1 cursor-pointer hover:text-white transition-colors" id="lang-toggle-btn" type="button">
+<div class="flex items-center space-x-1">
 <svg class="w-3.5 h-3.5 text-brand-cyan" fill="none" stroke="currentColor" viewBox="0 0 24 24">
 <path d="M3.055 11H5a2 2 0 012 2v1a2 2 0 002 2 2 2 0 012 2v2.945M8 3.935V5.5A2.5 2.5 0 0010.5 8h.5a2 2 0 012 2 2 2 0 104 0 2 2 0 012-2h1.064M15 20.488V18a2 2 0 012-2h3.064M21 12a9 9 0 11-18 0 9 9 0 0118 0z" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></path>
 </svg>
-<span class="font-medium text-[11px]" id="lang-toggle-label">United Arab Emirates (English / <span class="font-bold text-white">عربي</span>)</span>
-</button>
+<span class="font-medium text-[11px]" data-i18n="announcementRegion">United Arab Emirates (English / عربي)</span>
+</div>
 <a class="hover:text-white transition-colors text-[11px]" data-i18n="supportCenter" href="#support">Support Center</a>
 </div>
 </div>
@@ -124,7 +124,7 @@
 <div class="flex items-center space-x-10">
 <!-- Celibery Logo -->
 <a class="flex items-center gap-3 group" href="#">
-<img src="logo.webp" alt="Celibery" class="h-7 w-auto">
+<img src="logo.webp" alt="Celibery" class="h-10 w-auto drop-shadow-[0_0_14px_rgba(0,240,255,0.45)] group-hover:drop-shadow-[0_0_18px_rgba(0,240,255,0.6)] transition-all duration-300">
 </a>
 <!-- Desktop Navigation -->
 <nav class="hidden lg:flex items-center space-x-8 text-[14px] font-medium text-neutral-300">
@@ -341,6 +341,13 @@
 </div>
 <!-- Right: Utility Icons -->
 <div class="flex items-center space-x-5 text-neutral-200">
+<!-- EN / AR Language Toggle -->
+<button aria-label="Toggle language" class="flex items-center gap-1.5 px-3 py-1.5 rounded-full border border-neutral-700 hover:border-brand-cyan hover:text-brand-cyan text-[12px] font-bold tracking-wide transition-colors" id="lang-toggle-btn" type="button">
+<svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+<path d="M3.055 11H5a2 2 0 012 2v1a2 2 0 002 2 2 2 0 012 2v2.945M8 3.935V5.5A2.5 2.5 0 0010.5 8h.5a2 2 0 012 2 2 2 0 104 0 2 2 0 012-2h1.064M15 20.488V18a2 2 0 012-2h3.064M21 12a9 9 0 11-18 0 9 9 0 0118 0z" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></path>
+</svg>
+<span id="lang-toggle-label">EN</span>
+</button>
 <button aria-label="Search" class="hover:text-brand-cyan transition-colors p-2 rounded-full hover:bg-neutral-800">
 <svg class="w-5 h-5 stroke-[2.2]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
 <path d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" stroke-linecap="round" stroke-linejoin="round"></path>
@@ -1484,6 +1491,7 @@
 (function () {
   var dict = {
     announcement: { ar: "إطلاق حصري من سيليبري • توصيل سريع مجاني في الإمارات للطلبات فوق 150 درهم" },
+    announcementRegion: { ar: "الإمارات العربية المتحدة (English / عربي)" },
     supportCenter: { ar: "مركز الدعم" },
     navAudio: { ar: "الصوتيات" },
     navNas: { ar: "التخزين" },
@@ -1579,9 +1587,7 @@
 
     var label = document.getElementById("lang-toggle-label");
     if (label) {
-      label.innerHTML = isAr
-        ? 'الإمارات العربية المتحدة (<span class="font-bold text-white">English</span> / عربي)'
-        : 'United Arab Emirates (English / <span class="font-bold text-white">عربي</span>)';
+      label.textContent = isAr ? "AR" : "EN";
     }
 
     if (window.CelHero && typeof window.CelHero.refreshText === "function") {
