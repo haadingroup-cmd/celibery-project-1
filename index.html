@@ -1541,11 +1541,11 @@
   };
 
   var STORAGE_KEY = "celibery-lang";
-  var originals = {};
+  var originals = new WeakMap();
 
   function collectOriginals() {
     document.querySelectorAll("[data-i18n]").forEach(function (el) {
-      originals[el] = originals[el] || el.innerHTML;
+      if (!originals.has(el)) originals.set(el, el.innerHTML);
     });
     document.querySelectorAll("[data-i18n-placeholder]").forEach(function (el) {
       el.setAttribute("data-i18n-placeholder-en", el.getAttribute("placeholder"));
@@ -1562,8 +1562,8 @@
       var entry = dict[key];
       if (isAr && entry && entry.ar) {
         el.innerHTML = entry.ar;
-      } else {
-        el.innerHTML = originals[el] !== undefined ? originals[el] : el.innerHTML;
+      } else if (originals.has(el)) {
+        el.innerHTML = originals.get(el);
       }
     });
 
