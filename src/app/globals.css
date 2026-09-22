@@ -1,0 +1,106 @@
+@import "tailwindcss";
+
+:root {
+  --background: #ffffff;
+  --foreground: #111827;
+
+  /* Brand — matches the approved Stitch design system */
+  --color-brand-green: #00cc66;
+  --color-brand-emerald: #00b553;
+  --color-brand-dark: #111827;
+  --color-brand-gray: #6b7280;
+  --color-brand-light: #f5f7f9;
+  --color-brand-border: #e5e7eb;
+
+  /* Logo-matched teal — reserved for the cinematic hero/video sections */
+  --color-teal-glow: #02b9c6;
+  --color-teal-glow-light: #4fe0e8;
+}
+
+@theme inline {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+
+  --color-brand-green: var(--color-brand-green);
+  --color-brand-emerald: var(--color-brand-emerald);
+  --color-brand-dark: var(--color-brand-dark);
+  --color-brand-gray: var(--color-brand-gray);
+  --color-brand-light: var(--color-brand-light);
+  --color-brand-border: var(--color-brand-border);
+
+  --color-teal-glow: var(--color-teal-glow);
+  --color-teal-glow-light: var(--color-teal-glow-light);
+
+  --font-sans: var(--font-body);
+
+  --container-8xl: 90rem;
+
+  --animate-pulse-glow: pulse-glow 4s ease-in-out infinite;
+  --animate-hero-progress: hero-progress var(--hero-progress-duration, 6500ms) linear forwards;
+  --animate-fly-in: fly-in 0.6s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+
+  @keyframes pulse-glow {
+    0%,
+    100% {
+      opacity: 0.5;
+      transform: scale(1);
+    }
+    50% {
+      opacity: 0.9;
+      transform: scale(1.06);
+    }
+  }
+
+  @keyframes fly-in {
+    0% {
+      opacity: 0;
+      transform: translate3d(60px, 60px, 0) scale(0.9);
+    }
+    100% {
+      opacity: 1;
+      transform: translate3d(0, 0, 0) scale(1);
+    }
+  }
+
+  @keyframes hero-progress {
+    from {
+      width: 0%;
+    }
+    to {
+      width: 100%;
+    }
+  }
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background: var(--background);
+  color: var(--foreground);
+  font-family: var(--font-body), ui-sans-serif, system-ui, sans-serif;
+}
+
+::selection {
+  background: var(--color-brand-green);
+  color: #ffffff;
+}
+
+.no-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+.no-scrollbar {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.001ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.001ms !important;
+  }
+}
