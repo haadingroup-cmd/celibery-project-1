@@ -103,16 +103,16 @@
 <div class="max-w-7xl mx-auto flex justify-between items-center">
 <div class="flex items-center space-x-2">
 <span class="inline-block w-2 h-2 rounded-full bg-brand-cyan animate-pulse"></span>
-<span class="text-neutral-300">CELIBERY Exclusive Release • Free Express UAE Delivery on Orders Over AED 150</span>
+<span class="text-neutral-300" data-i18n="announcement">CELIBERY Exclusive Release • Free Express UAE Delivery on Orders Over AED 150</span>
 </div>
 <div class="flex items-center space-x-6 text-neutral-400">
-<div class="flex items-center space-x-1 cursor-pointer hover:text-white transition-colors">
+<button aria-label="Toggle language" class="flex items-center space-x-1 cursor-pointer hover:text-white transition-colors" id="lang-toggle-btn" type="button">
 <svg class="w-3.5 h-3.5 text-brand-cyan" fill="none" stroke="currentColor" viewBox="0 0 24 24">
 <path d="M3.055 11H5a2 2 0 012 2v1a2 2 0 002 2 2 2 0 012 2v2.945M8 3.935V5.5A2.5 2.5 0 0010.5 8h.5a2 2 0 012 2 2 2 0 104 0 2 2 0 012-2h1.064M15 20.488V18a2 2 0 012-2h3.064M21 12a9 9 0 11-18 0 9 9 0 0118 0z" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></path>
 </svg>
-<span class="font-medium text-[11px]">United Arab Emirates (English / عربي)</span>
-</div>
-<a class="hover:text-white transition-colors text-[11px]" href="#support">Support Center</a>
+<span class="font-medium text-[11px]" id="lang-toggle-label">United Arab Emirates (English / <span class="font-bold text-white">عربي</span>)</span>
+</button>
+<a class="hover:text-white transition-colors text-[11px]" data-i18n="supportCenter" href="#support">Support Center</a>
 </div>
 </div>
 </div>
@@ -131,13 +131,13 @@
 <!-- Celibery Audio Link Direct -->
 <a class="text-white hover:text-brand-cyan flex items-center gap-1.5 transition-colors group/audio font-semibold" href="#celibery-showcase">
 <span class="w-2 h-2 rounded-full bg-brand-cyan animate-ping mr-0.5"></span>
-<span class="">Acoustics &amp; Audio</span>
+<span data-i18n="navAudio">Acoustics &amp; Audio</span>
 </a>
 <!-- NAS Mega Menu -->
 <div class="relative">
 <details class="group">
 <summary class="hover:text-brand-cyan transition-colors py-6 flex items-center gap-1.5 cursor-pointer list-none select-none">
-<span class="">NAS</span>
+<span data-i18n="navNas">NAS</span>
 <span class="text-[9px] bg-red-500 text-white font-bold px-1.5 py-0.5 rounded-full uppercase tracking-wider">New</span>
 <svg class="w-3.5 h-3.5 text-neutral-400 group-open:rotate-180 transition-transform duration-200" fill="none" stroke="currentColor" viewBox="0 0 24 24">
 <path d="M19 9l-7 7-7-7" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5"></path>
@@ -218,7 +218,7 @@
 <div class="relative">
 <details class="group">
 <summary class="hover:text-brand-cyan transition-colors py-6 flex items-center gap-1.5 cursor-pointer list-none select-none">
-<span class="">Charging &amp; GaN</span>
+<span data-i18n="navCharging">Charging &amp; GaN</span>
 <svg class="w-3.5 h-3.5 text-neutral-400 group-open:rotate-180 transition-transform duration-200" fill="none" stroke="currentColor" viewBox="0 0 24 24">
 <path d="M19 9l-7 7-7-7" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5"></path>
 </svg>
@@ -281,7 +281,7 @@
 <div class="relative">
 <details class="group">
 <summary class="hover:text-brand-cyan transition-colors py-6 flex items-center gap-1.5 cursor-pointer list-none select-none">
-<span class="">Data &amp; Accessories</span>
+<span data-i18n="navData">Data &amp; Accessories</span>
 <svg class="w-3.5 h-3.5 text-neutral-400 group-open:rotate-180 transition-transform duration-200" fill="none" stroke="currentColor" viewBox="0 0 24 24">
 <path d="M19 9l-7 7-7-7" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5"></path>
 </svg>
@@ -335,8 +335,8 @@
 </div>
 </details>
 </div>
-<a class="hover:text-brand-cyan transition-colors py-2" href="#about">About</a>
-<a class="hover:text-brand-cyan transition-colors py-2" href="#support">Support</a>
+<a class="hover:text-brand-cyan transition-colors py-2" data-i18n="navAbout" href="#about">About</a>
+<a class="hover:text-brand-cyan transition-colors py-2" data-i18n="navSupport" href="#support">Support</a>
 </nav>
 </div>
 <!-- Right: Utility Icons -->
@@ -396,13 +396,13 @@
 <!-- Sleek CTA Buttons -->
 <div class="mt-8 flex flex-wrap items-center gap-4">
   <a class="px-8 py-3.5 rounded-full bg-brand-cyan text-black font-extrabold text-sm tracking-wider uppercase hover:bg-cyan-300 transition-all glow-cyan hover:scale-105 active:scale-95 duration-200 flex items-center gap-2" href="#celibery-lineup">
-    <span class="">Shop Audio</span>
+    <span data-i18n="heroShopAudio">Shop Audio</span>
     <svg class="w-4 h-4 font-bold" fill="none" stroke="currentColor" viewBox="0 0 24 24">
       <path d="M7 17L17 7M17 7H7M17 7V17" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5"></path>
     </svg>
   </a>
   <a class="px-8 py-3.5 rounded-full glass-pill hover:bg-white/10 text-white font-semibold text-sm tracking-wide border border-white/20 transition-all hover:border-brand-cyan/60 hover:scale-105 duration-200 flex items-center gap-2" href="#studio-sound">
-    <span class="">Explore Tech</span>
+    <span data-i18n="heroExploreTech">Explore Tech</span>
     <svg class="w-4 h-4 text-brand-cyan" fill="none" stroke="currentColor" viewBox="0 0 24 24">
       <path d="M9 5l7 7-7 7" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></path>
     </svg>
@@ -412,43 +412,27 @@
 <div class="mt-10 flex flex-wrap items-center gap-3 text-xs font-semibold tracking-wider text-neutral-300 uppercase">
   <div class="glass-pill px-3.5 py-1.5 rounded-full flex items-center gap-2 border-neutral-700/60">
     <span class="w-2 h-2 rounded-full bg-brand-cyan"></span>
-    <span class="">Hi-Fi Studio</span>
+    <span data-i18n="badgeHifi">Hi-Fi Studio</span>
   </div>
   <div class="glass-pill px-3.5 py-1.5 rounded-full flex items-center gap-2 border-neutral-700/60">
     <span class="w-2 h-2 rounded-full bg-brand-emerald"></span>
-    <span class="">Active ANC</span>
+    <span data-i18n="badgeAnc">Active ANC</span>
   </div>
   <div class="glass-pill px-3.5 py-1.5 rounded-full flex items-center gap-2 border-neutral-700/60">
     <span class="w-2 h-2 rounded-full bg-cyan-400"></span>
-    <span class="">Qi2 Fast Charge</span>
+    <span data-i18n="badgeQi2">Qi2 Fast Charge</span>
   </div>
 </div></div>
 </div>
-<!-- Interactive Video Scrubber & Slide Progress Bar (exact layout from Reference Images 2 & 3) -->
+<!-- Interactive Video Scrubber & Slide Progress Bar -->
 <div class="relative z-20 w-full bg-black/50 backdrop-blur-md border-t border-neutral-800/80 py-4 px-4 sm:px-8">
-<div class="max-w-7xl mx-auto flex flex-col sm:flex-row items-center justify-between gap-4">
-<!-- Play/Pause Control & Frequency Status -->
-<div class="flex items-center space-x-4">
-<button aria-label="Toggle Hero Video Playback" class="w-8 h-8 rounded-full glass-pill hover:border-brand-cyan text-brand-cyan flex items-center justify-center transition-colors" id="video-toggle-btn" onclick="const v = document.getElementById('hero-ambient-video'); if (v.paused) { v.play(); this.innerHTML='⏸'; } else { v.pause(); this.innerHTML='▶'; }">
+<div class="max-w-7xl mx-auto flex items-center gap-4">
+<!-- Play/Pause Control -->
+<button aria-label="Toggle Hero Video Playback" class="w-8 h-8 shrink-0 rounded-full glass-pill hover:border-brand-cyan text-brand-cyan flex items-center justify-center transition-colors" id="video-toggle-btn" onclick="const v = document.getElementById('hero-ambient-video'); if (v.paused) { v.play(); this.innerHTML='⏸'; } else { v.pause(); this.innerHTML='▶'; }">
 <svg class="w-3.5 h-3.5 fill-current" viewBox="0 0 24 24"><rect height="16" width="4" x="6" y="4"></rect><rect height="16" width="4" x="14" y="4"></rect></svg>
 </button>
-<div class="flex items-center space-x-2 text-xs font-mono text-neutral-400">
-<span class="text-brand-cyan font-bold">24-BIT / 96KHZ</span>
-<span class="">•</span>
-<span class="text-neutral-300">SPATIAL 3D SOUNDSTREAM</span>
-</div>
-</div>
 <!-- Segmented Track / Scrubber Bar, one segment per hero slide -->
-<div class="flex-1 max-w-2xl w-full flex gap-1.5 items-center px-2" id="hero-scrubber"></div>
-<!-- Chat / Audio Assist Floating Pill Button -->
-<div class="flex items-center space-x-3">
-<span class="text-[11px] text-neutral-400 uppercase tracking-widest hidden md:inline-block">Celibery Audio Engine</span>
-<button aria-label="Live Frequency EQ" class="w-9 h-9 rounded-full bg-brand-cyan/20 border border-brand-cyan/50 text-brand-cyan hover:bg-brand-cyan hover:text-black flex items-center justify-center transition-all">
-<svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-<path d="M8 10h.01M12 10h.01M16 10h.01M9 16H5a2 2 0 01-2-2V6a2 2 0 012-2h14a2 2 0 012 2v8a2 2 0 01-2 2h-5l-5 5v-5z" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></path>
-</svg>
-</button>
-</div>
+<div class="flex-1 w-full flex gap-1.5 items-center" id="hero-scrubber"></div>
 </div>
 </div>
 </section>
@@ -476,13 +460,13 @@
 <div class="lg:col-span-5 flex flex-col justify-center">
 <div class="inline-flex items-center gap-2 text-xs uppercase font-extrabold tracking-[0.2em] text-brand-emerald mb-3">
 <span class="w-2 h-2 rounded-full bg-brand-emerald"></span>
-          Flagship Acoustic Engineering
+          <span data-i18n="showcaseEyebrow">Flagship Acoustic Engineering</span>
         </div>
 <h2 class="text-3xl sm:text-4xl font-extrabold text-white tracking-tight leading-tight">
-          Neo-Acoustic X7 Pro <br>
-<span class="text-brand-cyan">Studio Sound Meets Cyber Tech</span>
+          <span data-i18n="showcaseTitle1">Neo-Acoustic X7 Pro</span> <br>
+<span class="text-brand-cyan" data-i18n="showcaseTitle2">Studio Sound Meets Cyber Tech</span>
 </h2>
-<p class="mt-4 text-sm text-neutral-300 leading-relaxed">
+<p class="mt-4 text-sm text-neutral-300 leading-relaxed" data-i18n="showcaseBody">
           Engineered in collaboration with Celibery Audio Labs, the Neo-Acoustic X7 Pro pairs beryllium-plated acoustic drivers with Celibery's 25W GaN wireless power deck. Experience uncompressed 24-bit studio fidelity wherever you roam.
         </p>
 <!-- Dynamic Frequency Equalizer Visualizer Bars -->
@@ -536,13 +520,13 @@
       <div>
         <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full glass-pill text-xs font-mono text-brand-cyan border-brand-cyan/40 mb-3">
           <span class="w-2 h-2 rounded-full bg-brand-cyan animate-pulse"></span>
-          CELIBERY FLAGSHIP SERIES
+          <span data-i18n="lineupEyebrow">CELIBERY FLAGSHIP SERIES</span>
         </div>
         <h2 class="text-3xl sm:text-5xl font-black text-white tracking-tight">
-          Acoustic Perfection. <span class="text-brand-cyan">Cyber Precision.</span>
+          <span data-i18n="lineupTitle1">Acoustic Perfection.</span> <span class="text-brand-cyan" data-i18n="lineupTitle2">Cyber Precision.</span>
         </h2>
       </div>
-      <p class="text-neutral-400 text-sm max-w-md">
+      <p class="text-neutral-400 text-sm max-w-md" data-i18n="lineupBody">
         Studio-grade spatial drivers paired with high-performance GaN rapid recharge architecture.
       </p>
     </div>
@@ -771,10 +755,10 @@
 <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
 <!-- Section Title -->
 <div class="text-center mb-14">
-<h2 class="text-3xl sm:text-4xl font-extrabold text-white tracking-tight">
+<h2 class="text-3xl sm:text-4xl font-extrabold text-white tracking-tight" data-i18n="signatureTitle">
           Discover Our Signature Series
         </h2>
-<p class="mt-3 text-base text-neutral-400 max-w-2xl mx-auto">
+<p class="mt-3 text-base text-neutral-400 max-w-2xl mx-auto" data-i18n="signatureBody">
           Pioneering engineering that redefines acoustic performance, power mobility, and digital life.
         </p>
 </div>
@@ -911,11 +895,11 @@
 <section class="py-20 bg-[#0b0f14]" id="audio-categories">
 <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
 <div class="text-center mb-14">
-<span class="text-xs uppercase font-extrabold tracking-[0.25em] text-brand-cyan">Celibery Audio Architecture</span>
-<h2 class="text-3xl sm:text-4xl font-extrabold text-white tracking-tight mt-2">
+<span class="text-xs uppercase font-extrabold tracking-[0.25em] text-brand-cyan" data-i18n="categoriesEyebrow">Celibery Audio Architecture</span>
+<h2 class="text-3xl sm:text-4xl font-extrabold text-white tracking-tight mt-2" data-i18n="categoriesTitle">
         Choose Your Sound &amp; Frequency
       </h2>
-<p class="text-neutral-400 text-sm max-w-xl mx-auto mt-2">Precision engineered audio hardware built for audiophiles, creators, and daily commuters.</p>
+<p class="text-neutral-400 text-sm max-w-xl mx-auto mt-2" data-i18n="categoriesBody">Precision engineered audio hardware built for audiophiles, creators, and daily commuters.</p>
 </div>
 <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
 <!-- Category 1: Studio Headphones -->
@@ -1005,7 +989,7 @@
 <section class="py-14 bg-[#0d121a] border-y border-neutral-800/80" data-purpose="explore-lineup">
 <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
 <div class="flex items-center justify-between mb-8">
-<h2 class="text-2xl sm:text-3xl font-extrabold text-white tracking-tight">
+<h2 class="text-2xl sm:text-3xl font-extrabold text-white tracking-tight" data-i18n="ecosystemTitle">
           Explore the Ecosystem Lineup
         </h2>
 <!-- Navigation Arrows -->
@@ -1106,8 +1090,8 @@
 <!-- BEGIN: DrivenByInnovation -->
 <section class="pt-16 pb-0 bg-[#0b0f14]" data-purpose="stats-and-landscape">
 <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center mb-12">
-<span class="text-xs uppercase font-extrabold tracking-[0.25em] text-brand-emerald">Global Track Record</span>
-<h2 class="text-3xl sm:text-4xl font-extrabold text-white tracking-tight mt-1">
+<span class="text-xs uppercase font-extrabold tracking-[0.25em] text-brand-emerald" data-i18n="statsEyebrow">Global Track Record</span>
+<h2 class="text-3xl sm:text-4xl font-extrabold text-white tracking-tight mt-1" data-i18n="statsTitle">
         Driven by Innovation
       </h2>
 </div>
@@ -1116,19 +1100,19 @@
 <div class="grid grid-cols-2 md:grid-cols-4 gap-6">
 <div class="bg-neutral-900/80 p-6 sm:p-8 rounded-2xl border border-neutral-800 text-center shadow-sm">
 <div class="text-3xl sm:text-4xl font-extrabold text-white tracking-tight">2100+</div>
-<div class="text-xs sm:text-sm font-medium text-neutral-400 mt-2">Patents</div>
+<div class="text-xs sm:text-sm font-medium text-neutral-400 mt-2" data-i18n="statPatents">Patents</div>
 </div>
 <div class="bg-neutral-900/80 p-6 sm:p-8 rounded-2xl border border-neutral-800 text-center shadow-sm">
 <div class="text-3xl sm:text-4xl font-extrabold text-white tracking-tight">180+</div>
-<div class="text-xs sm:text-sm font-medium text-neutral-400 mt-2">Countries</div>
+<div class="text-xs sm:text-sm font-medium text-neutral-400 mt-2" data-i18n="statCountries">Countries</div>
 </div>
 <div class="bg-neutral-900/80 p-6 sm:p-8 rounded-2xl border border-neutral-800 text-center shadow-sm">
 <div class="text-3xl sm:text-4xl font-extrabold text-brand-cyan tracking-tight">73</div>
-<div class="text-xs sm:text-sm font-medium text-neutral-400 mt-2">Design Awards</div>
+<div class="text-xs sm:text-sm font-medium text-neutral-400 mt-2" data-i18n="statAwards">Design Awards</div>
 </div>
 <div class="bg-neutral-900/80 p-6 sm:p-8 rounded-2xl border border-neutral-800 text-center shadow-sm">
 <div class="text-3xl sm:text-4xl font-extrabold text-white tracking-tight">300M+</div>
-<div class="text-xs sm:text-sm font-medium text-neutral-400 mt-2">Global Users</div>
+<div class="text-xs sm:text-sm font-medium text-neutral-400 mt-2" data-i18n="statUsers">Global Users</div>
 </div>
 </div>
 </div>
@@ -1138,7 +1122,7 @@
 <section class="py-14 bg-neutral-950 border-y border-neutral-800/60" data-purpose="partners">
 <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
 <div class="text-center sm:text-left mb-8">
-<h2 class="text-2xl sm:text-3xl font-extrabold text-white tracking-tight">
+<h2 class="text-2xl sm:text-3xl font-extrabold text-white tracking-tight" data-i18n="partnersTitle">
           Global Retail Partners
         </h2>
 </div>
@@ -1193,8 +1177,8 @@
 <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
 <div class="flex items-center justify-between mb-10">
 <div>
-<span class="text-xs uppercase font-extrabold tracking-[0.25em] text-brand-cyan">Press &amp; Audio Critics</span>
-<h2 class="text-2xl sm:text-3xl font-extrabold text-white tracking-tight mt-1">
+<span class="text-xs uppercase font-extrabold tracking-[0.25em] text-brand-cyan" data-i18n="mediaEyebrow">Press &amp; Audio Critics</span>
+<h2 class="text-2xl sm:text-3xl font-extrabold text-white tracking-tight mt-1" data-i18n="mediaTitle">
     Media Voices
   </h2>
 </div>
@@ -1270,7 +1254,7 @@
 <path d="M16 11V7a4 4 0 00-8 0v4M5 9h14l1 12H4L5 9z" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></path>
 </svg>
 </div>
-<span class="text-sm font-semibold tracking-wide">Where to Buy</span>
+<span class="text-sm font-semibold tracking-wide" data-i18n="quickBuy">Where to Buy</span>
 </a>
 <a class="flex flex-col items-center group" href="#support">
 <div class="w-12 h-12 rounded-full bg-neutral-900 group-hover:bg-brand-cyan group-hover:text-black transition-colors flex items-center justify-center mb-3 border border-neutral-800">
@@ -1278,7 +1262,7 @@
 <path d="M18.364 5.636l-3.536 3.536m0 5.656l3.536 3.536M9.172 9.172L5.636 5.636m3.536 9.192l-3.536 3.536M21 12a9 9 0 11-18 0 9 9 0 0118 0zm-5 0a4 4 0 11-8 0 4 4 0 018 0z" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></path>
 </svg>
 </div>
-<span class="text-sm font-semibold tracking-wide">Acoustic Support</span>
+<span class="text-sm font-semibold tracking-wide" data-i18n="quickSupport">Acoustic Support</span>
 </a>
 <a class="flex flex-col items-center group" href="#about-ugreen">
 <div class="w-12 h-12 rounded-full bg-neutral-900 group-hover:bg-brand-cyan group-hover:text-black transition-colors flex items-center justify-center mb-3 border border-neutral-800">
@@ -1286,7 +1270,7 @@
 <path d="M13 16h-1v-4h-1m1-4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></path>
 </svg>
 </div>
-<span class="text-sm font-semibold tracking-wide">Our Story</span>
+<span class="text-sm font-semibold tracking-wide" data-i18n="quickStory">Our Story</span>
 </a>
 <a class="flex flex-col items-center group" href="#contact">
 <div class="w-12 h-12 rounded-full bg-neutral-900 group-hover:bg-brand-cyan group-hover:text-black transition-colors flex items-center justify-center mb-3 border border-neutral-800">
@@ -1294,7 +1278,7 @@
 <path d="M8 12h.01M12 12h.01M16 12h.01M21 12c0 4.418-4.03 8-9 8a9.863 9.863 0 01-4.255-.949L3 20l1.395-3.72C3.512 15.042 3 13.574 3 12c0-4.418 4.03-8 9-8s9 3.582 9 8z" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></path>
 </svg>
 </div>
-<span class="text-sm font-semibold tracking-wide">Contact UAE</span>
+<span class="text-sm font-semibold tracking-wide" data-i18n="quickContact">Contact UAE</span>
 </a>
 </div>
 </div>
@@ -1307,20 +1291,20 @@
 <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 pb-16 border-b border-neutral-800">
 <!-- Newsletter Signup (Cols 5) -->
 <div class="lg:col-span-5">
-<h3 class="text-xl font-bold text-white mb-2 tracking-tight">Sound &amp; Power Without Limits</h3>
-<p class="text-xs text-neutral-400 mb-5">
+<h3 class="text-xl font-bold text-white mb-2 tracking-tight" data-i18n="newsletterTitle">Sound &amp; Power Without Limits</h3>
+<p class="text-xs text-neutral-400 mb-5" data-i18n="newsletterBody">
   Get early VIP access to limited audio drops, Firmware EQ profiles, and exclusive UAE promotional codes.
 </p>
 <form class="flex flex-col gap-3">
 <div class="flex gap-2">
-<input class="w-full bg-neutral-900 border border-neutral-700 text-white text-xs px-4 py-2.5 rounded-lg focus:outline-none focus:border-brand-cyan" placeholder="Enter your email address" type="email">
+<input class="w-full bg-neutral-900 border border-neutral-700 text-white text-xs px-4 py-2.5 rounded-lg focus:outline-none focus:border-brand-cyan" data-i18n-placeholder="newsletterPlaceholder" placeholder="Enter your email address" type="email">
 <button class="bg-brand-cyan hover:bg-cyan-300 text-black text-xs font-bold px-5 py-2.5 rounded-lg transition-colors flex-shrink-0" type="submit">
-  Join Club
+  <span data-i18n="newsletterJoin">Join Club</span>
 </button>
 </div>
 <label class="flex items-start space-x-2 text-[11px] text-neutral-400 cursor-pointer">
 <input class="rounded bg-neutral-900 border-neutral-700 text-brand-cyan focus:ring-0 mt-0.5" type="checkbox">
-<span class="">I agree to receive CELIBERY acoustic news, updates, and releases via email.</span>
+<span data-i18n="newsletterConsent">I agree to receive CELIBERY acoustic news, updates, and releases via email.</span>
 </label>
 </form>
 <!-- Social Icons -->
@@ -1339,7 +1323,7 @@
 <!-- Multi-column Navigation Links (Cols 7) -->
 <div class="lg:col-span-7 grid grid-cols-2 sm:grid-cols-4 gap-8 text-xs">
 <div>
-<h4 class="text-white font-bold uppercase tracking-wider mb-4">Acoustics &amp; Power</h4>
+<h4 class="text-white font-bold uppercase tracking-wider mb-4" data-i18n="footerColAudio">Acoustics &amp; Power</h4>
 <ul class="space-y-2.5">
 <li class=""><a class="text-brand-cyan font-semibold hover:underline" href="#">Neo-Acoustic X7</a></li>
 <li class=""><a class="hover:text-white transition-colors" href="#">Cyber Sound Towers</a></li>
@@ -1349,7 +1333,7 @@
 </ul>
 </div>
 <div>
-<h4 class="text-white font-bold uppercase tracking-wider mb-4">Series</h4>
+<h4 class="text-white font-bold uppercase tracking-wider mb-4" data-i18n="footerColSeries">Series</h4>
 <ul class="space-y-2.5">
 <li class=""><a class="hover:text-white transition-colors" href="#">Celibery Soundline</a></li>
 <li class=""><a class="hover:text-white transition-colors" href="#">MagFlow Series</a></li>
@@ -1359,7 +1343,7 @@
 </ul>
 </div>
 <div>
-<h4 class="text-white font-bold uppercase tracking-wider mb-4">Ecosystem</h4>
+<h4 class="text-white font-bold uppercase tracking-wider mb-4" data-i18n="footerColEcosystem">Ecosystem</h4>
 <ul class="space-y-2.5">
 <li class=""><a class="hover:text-white transition-colors" href="#">About The Union</a></li>
 <li class=""><a class="hover:text-white transition-colors" href="#">Audio Drivers Lab</a></li>
@@ -1368,7 +1352,7 @@
 </ul>
 </div>
 <div>
-<h4 class="text-white font-bold uppercase tracking-wider mb-4">Support</h4>
+<h4 class="text-white font-bold uppercase tracking-wider mb-4" data-i18n="footerColSupport">Support</h4>
 <ul class="space-y-2.5">
 <li class=""><a class="hover:text-white transition-colors" href="#">Firmware &amp; EQ App</a></li>
 <li class=""><a class="hover:text-white transition-colors" href="#">2-Year UAE Warranty</a></li>
@@ -1381,14 +1365,14 @@
 <!-- Legal & Copyright Row -->
 <div class="pt-8 flex flex-col md:flex-row items-center justify-between text-[11px] text-neutral-500 gap-4">
 <div class="flex flex-wrap items-center gap-x-6 gap-y-2">
-<a class="hover:text-white transition-colors" href="#">Privacy Policy</a>
-<a class="hover:text-white transition-colors" href="#">Cookie Notice</a>
-<a class="hover:text-white transition-colors" href="#">Terms and Conditions</a>
-<a class="hover:text-white transition-colors" href="#">Frequency Calibration</a>
+<a class="hover:text-white transition-colors" data-i18n="footerPrivacy" href="#">Privacy Policy</a>
+<a class="hover:text-white transition-colors" data-i18n="footerCookie" href="#">Cookie Notice</a>
+<a class="hover:text-white transition-colors" data-i18n="footerTerms" href="#">Terms and Conditions</a>
+<a class="hover:text-white transition-colors" data-i18n="footerCalibration" href="#">Frequency Calibration</a>
 </div>
 <div class="flex items-center space-x-4">
-<span class="">Copyright © 2026 CELIBERY Audio Labs. All rights reserved.</span>
-<div class="bg-neutral-900 border border-neutral-800 rounded px-2 py-0.5 text-[9px] font-mono text-neutral-400">
+<span data-i18n="footerCopyright">Copyright © 2026 CELIBERY Audio Labs. All rights reserved.</span>
+<div class="bg-neutral-900 border border-neutral-800 rounded px-2 py-0.5 text-[9px] font-mono text-neutral-400" data-i18n="footerCertified">
   HI-RES AUDIO CERTIFIED
 </div>
 </div>
@@ -1402,16 +1386,36 @@
 <script>
 (function () {
   var slides = [
-    { src: "videos/speaker-backpack.mp4", eyebrow: "CELIBERY CEL-96S", h1: "POWER YOUR", h2: "MOMENT.", sub: "16W powerful sound, up to 16 hours playtime, IP67 water &amp; dust resistant." },
-    { src: "videos/speaker-tent.mp4", eyebrow: "CELIBERY CEL-96S", h1: "SOUND WHEREVER", h2: "YOU ROAM.", sub: "Rugged, pocketable, and ready for the outdoors." },
-    { src: "videos/speaker-clip.mp4", eyebrow: "CELIBERY CEL-96S", h1: "CLIP IN.", h2: "TUNE OUT.", sub: "Instant carry, all-day playtime." },
-    { src: "videos/headphones-resting.mp4", eyebrow: "CELIBERY AUDIO", h1: "YOUR SOUND.", h2: "YOUR WORLD.", sub: "Premium over-ear comfort built for all-day listening." },
-    { src: "videos/headphones-wearing.mp4", eyebrow: "CELIBERY AUDIO", h1: "ALL-DAY", h2: "COMFORT.", sub: "Foldable design, wireless freedom, crisp highs and deep bass." },
-    { src: "videos/headphones-fold.mp4", eyebrow: "CELIBERY AUDIO", h1: "WORK. FOLD.", h2: "GO.", sub: "Foldable, travel-ready design for wherever work takes you." },
-    { src: "videos/charger-surface.mp4", eyebrow: "CELIBERY CHARGING", h1: "CHARGE FASTER.", h2: "CARRY LESS.", sub: "65W GaN chargers built for speed." },
-    { src: "videos/charger-backpack.mp4", eyebrow: "CELIBERY CHARGING", h1: "POWER ON", h2: "THE MOVE.", sub: "Compact GaN charging that travels with you." },
-    { src: "videos/cable-phone.mp4", eyebrow: "CELIBERY CHARGING", h1: "PLUG IN.", h2: "POWER UP.", sub: "Fast charging cables built for everyday carry." },
-    { src: "videos/powerbank-surface.mp4", eyebrow: "CELIBERY POWER", h1: "POWER THAT", h2: "TRAVELS.", sub: "Built-in cables and a live display — never caught without a charge." }
+    { src: "videos/speaker-backpack.mp4",
+      eyebrow: "CELIBERY CEL-96S", h1: "POWER YOUR", h2: "MOMENT.", sub: "16W powerful sound, up to 16 hours playtime, IP67 water &amp; dust resistant.",
+      eyebrow_ar: "سيليبري CEL-96S", h1_ar: "اشحن", h2_ar: "لحظتك.", sub_ar: "صوت قوي بقوة 16 واط، حتى 16 ساعة تشغيل، مقاوم للماء والغبار IP67." },
+    { src: "videos/speaker-tent.mp4",
+      eyebrow: "CELIBERY CEL-96S", h1: "SOUND WHEREVER", h2: "YOU ROAM.", sub: "Rugged, pocketable, and ready for the outdoors.",
+      eyebrow_ar: "سيليبري CEL-96S", h1_ar: "صوت أينما", h2_ar: "تذهب.", sub_ar: "متين، سهل الحمل، وجاهز للأجواء الخارجية." },
+    { src: "videos/speaker-clip.mp4",
+      eyebrow: "CELIBERY CEL-96S", h1: "CLIP IN.", h2: "TUNE OUT.", sub: "Instant carry, all-day playtime.",
+      eyebrow_ar: "سيليبري CEL-96S", h1_ar: "ثبّته.", h2_ar: "واستمتع.", sub_ar: "حمل فوري، تشغيل طوال اليوم." },
+    { src: "videos/headphones-resting.mp4",
+      eyebrow: "CELIBERY AUDIO", h1: "YOUR SOUND.", h2: "YOUR WORLD.", sub: "Premium over-ear comfort built for all-day listening.",
+      eyebrow_ar: "سيليبري أوديو", h1_ar: "صوتك.", h2_ar: "عالمك.", sub_ar: "راحة فاخرة فوق الأذن مصممة للاستماع طوال اليوم." },
+    { src: "videos/headphones-wearing.mp4",
+      eyebrow: "CELIBERY AUDIO", h1: "ALL-DAY", h2: "COMFORT.", sub: "Foldable design, wireless freedom, crisp highs and deep bass.",
+      eyebrow_ar: "سيليبري أوديو", h1_ar: "راحة", h2_ar: "طوال اليوم.", sub_ar: "تصميم قابل للطي، حرية لاسلكية، حدة عالية وباس عميق." },
+    { src: "videos/headphones-fold.mp4",
+      eyebrow: "CELIBERY AUDIO", h1: "WORK. FOLD.", h2: "GO.", sub: "Foldable, travel-ready design for wherever work takes you.",
+      eyebrow_ar: "سيليبري أوديو", h1_ar: "اعمل. اطوِ.", h2_ar: "انطلق.", sub_ar: "تصميم قابل للطي وجاهز للسفر أينما يأخذك العمل." },
+    { src: "videos/charger-surface.mp4",
+      eyebrow: "CELIBERY CHARGING", h1: "CHARGE FASTER.", h2: "CARRY LESS.", sub: "65W GaN chargers built for speed.",
+      eyebrow_ar: "شحن سيليبري", h1_ar: "اشحن أسرع.", h2_ar: "احمل أقل.", sub_ar: "شواحن GaN بقوة 65 واط مصممة للسرعة." },
+    { src: "videos/charger-backpack.mp4",
+      eyebrow: "CELIBERY CHARGING", h1: "POWER ON", h2: "THE MOVE.", sub: "Compact GaN charging that travels with you.",
+      eyebrow_ar: "شحن سيليبري", h1_ar: "طاقة", h2_ar: "أثناء التنقل.", sub_ar: "شحن GaN مدمج يرافقك أينما ذهبت." },
+    { src: "videos/cable-phone.mp4",
+      eyebrow: "CELIBERY CHARGING", h1: "PLUG IN.", h2: "POWER UP.", sub: "Fast charging cables built for everyday carry.",
+      eyebrow_ar: "شحن سيليبري", h1_ar: "وصّل.", h2_ar: "اشحن.", sub_ar: "كابلات شحن سريع مصممة للاستخدام اليومي." },
+    { src: "videos/powerbank-surface.mp4",
+      eyebrow: "CELIBERY POWER", h1: "POWER THAT", h2: "TRAVELS.", sub: "Built-in cables and a live display — never caught without a charge.",
+      eyebrow_ar: "طاقة سيليبري", h1_ar: "طاقة", h2_ar: "تسافر معك.", sub_ar: "كابلات مدمجة وشاشة عرض مباشرة — لا تنفد طاقتك أبداً." }
   ];
 
   var video = document.getElementById("hero-ambient-video");
@@ -1447,15 +1451,21 @@
     });
   }
 
+  function renderText() {
+    var slide = slides[current];
+    var isAr = document.documentElement.getAttribute("lang") === "ar";
+    eyebrowEl.textContent = isAr ? slide.eyebrow_ar : slide.eyebrow;
+    h1El.textContent = isAr ? slide.h1_ar : slide.h1;
+    h2El.textContent = isAr ? slide.h2_ar : slide.h2;
+    subEl.innerHTML = isAr ? slide.sub_ar : slide.sub;
+  }
+
   function goTo(i) {
     current = i;
     var slide = slides[current];
     video.src = slide.src;
     video.play().catch(function () {});
-    eyebrowEl.textContent = slide.eyebrow;
-    h1El.textContent = slide.h1;
-    h2El.textContent = slide.h2;
-    subEl.innerHTML = slide.sub;
+    renderText();
     renderSegments();
   }
 
@@ -1463,7 +1473,138 @@
     goTo((current + 1) % slides.length);
   });
 
+  window.CelHero = { refreshText: renderText };
+
   goTo(0);
+})();
+</script>
+
+<!-- EN / AR language toggle -->
+<script>
+(function () {
+  var dict = {
+    announcement: { ar: "إطلاق حصري من سيليبري • توصيل سريع مجاني في الإمارات للطلبات فوق 150 درهم" },
+    supportCenter: { ar: "مركز الدعم" },
+    navAudio: { ar: "الصوتيات" },
+    navNas: { ar: "التخزين" },
+    navCharging: { ar: "الشحن و GaN" },
+    navData: { ar: "الملحقات" },
+    navAbout: { ar: "من نحن" },
+    navSupport: { ar: "الدعم" },
+    heroShopAudio: { ar: "تسوق الصوتيات" },
+    heroExploreTech: { ar: "اكتشف التقنية" },
+    badgeHifi: { ar: "استوديو عالي الدقة" },
+    badgeAnc: { ar: "عزل ضوضاء فعّال" },
+    badgeQi2: { ar: "شحن Qi2 سريع" },
+    showcaseEyebrow: { ar: "هندسة صوتية رائدة" },
+    showcaseTitle1: { ar: "Neo-Acoustic X7 Pro" },
+    showcaseTitle2: { ar: "صوت استوديو بلمسة مستقبلية" },
+    showcaseBody: { ar: "صُمم بالتعاون مع مختبرات سيليبري الصوتية، يجمع Neo-Acoustic X7 Pro بين سماعات مطلية بالبريليوم ومحطة شحن GaN لاسلكية بقوة 25 واط. استمتع بجودة استوديو غير مضغوطة أينما ذهبت." },
+    lineupEyebrow: { ar: "سلسلة سيليبري الرائدة" },
+    lineupTitle1: { ar: "دقة صوتية." },
+    lineupTitle2: { ar: "تقنية مستقبلية." },
+    lineupBody: { ar: "سماعات استوديو عالية الدقة مع تقنية شحن GaN سريعة الأداء." },
+    signatureTitle: { ar: "اكتشف سلسلتنا المميزة" },
+    signatureBody: { ar: "هندسة رائدة تعيد تعريف الأداء الصوتي، وحرية الطاقة، والحياة الرقمية." },
+    categoriesEyebrow: { ar: "هندسة سيليبري الصوتية" },
+    categoriesTitle: { ar: "اختر صوتك وترددك" },
+    categoriesBody: { ar: "أجهزة صوتية مصممة بدقة لعشاق الصوت والمبدعين والمتنقلين يومياً." },
+    ecosystemTitle: { ar: "استكشف تشكيلة المنظومة" },
+    statsEyebrow: { ar: "سجل عالمي حافل" },
+    statsTitle: { ar: "الابتكار يقودنا" },
+    statPatents: { ar: "براءة اختراع" },
+    statCountries: { ar: "دولة" },
+    statAwards: { ar: "جائزة تصميم" },
+    statUsers: { ar: "مستخدم حول العالم" },
+    partnersTitle: { ar: "شركاء البيع حول العالم" },
+    mediaEyebrow: { ar: "الصحافة ونقاد الصوت" },
+    mediaTitle: { ar: "آراء الإعلام" },
+    quickBuy: { ar: "أين تشتري" },
+    quickSupport: { ar: "الدعم الصوتي" },
+    quickStory: { ar: "قصتنا" },
+    quickContact: { ar: "تواصل معنا" },
+    newsletterTitle: { ar: "صوت وطاقة بلا حدود" },
+    newsletterBody: { ar: "احصل على وصول مبكر لإصدارات الصوت المحدودة، وتحديثات المعادل الصوتي، وأكواد خصم حصرية في الإمارات." },
+    newsletterPlaceholder: { ar: "أدخل بريدك الإلكتروني" },
+    newsletterJoin: { ar: "انضم الآن" },
+    newsletterConsent: { ar: "أوافق على تلقي أخبار وتحديثات وإصدارات سيليبري عبر البريد الإلكتروني." },
+    footerColAudio: { ar: "الصوتيات والطاقة" },
+    footerColSeries: { ar: "السلاسل" },
+    footerColEcosystem: { ar: "المنظومة" },
+    footerColSupport: { ar: "الدعم" },
+    footerPrivacy: { ar: "سياسة الخصوصية" },
+    footerCookie: { ar: "إشعار الكوكيز" },
+    footerTerms: { ar: "الشروط والأحكام" },
+    footerCalibration: { ar: "معايرة التردد" },
+    footerCopyright: { ar: "© 2026 سيليبري أوديو لابز. جميع الحقوق محفوظة." },
+    footerCertified: { ar: "معتمد صوت عالي الدقة" }
+  };
+
+  var STORAGE_KEY = "celibery-lang";
+  var originals = {};
+
+  function collectOriginals() {
+    document.querySelectorAll("[data-i18n]").forEach(function (el) {
+      originals[el] = originals[el] || el.innerHTML;
+    });
+    document.querySelectorAll("[data-i18n-placeholder]").forEach(function (el) {
+      el.setAttribute("data-i18n-placeholder-en", el.getAttribute("placeholder"));
+    });
+  }
+
+  function applyLanguage(lang) {
+    var isAr = lang === "ar";
+    document.documentElement.setAttribute("lang", isAr ? "ar" : "en-AE");
+    document.documentElement.setAttribute("dir", isAr ? "rtl" : "ltr");
+
+    document.querySelectorAll("[data-i18n]").forEach(function (el) {
+      var key = el.getAttribute("data-i18n");
+      var entry = dict[key];
+      if (isAr && entry && entry.ar) {
+        el.innerHTML = entry.ar;
+      } else {
+        el.innerHTML = originals[el] !== undefined ? originals[el] : el.innerHTML;
+      }
+    });
+
+    document.querySelectorAll("[data-i18n-placeholder]").forEach(function (el) {
+      var key = el.getAttribute("data-i18n-placeholder");
+      var entry = dict[key];
+      if (isAr && entry && entry.ar) {
+        el.setAttribute("placeholder", entry.ar);
+      } else {
+        el.setAttribute("placeholder", el.getAttribute("data-i18n-placeholder-en"));
+      }
+    });
+
+    var label = document.getElementById("lang-toggle-label");
+    if (label) {
+      label.innerHTML = isAr
+        ? 'الإمارات العربية المتحدة (<span class="font-bold text-white">English</span> / عربي)'
+        : 'United Arab Emirates (English / <span class="font-bold text-white">عربي</span>)';
+    }
+
+    if (window.CelHero && typeof window.CelHero.refreshText === "function") {
+      window.CelHero.refreshText();
+    }
+
+    try { localStorage.setItem(STORAGE_KEY, lang); } catch (e) {}
+  }
+
+  document.addEventListener("DOMContentLoaded", function () {
+    collectOriginals();
+    var saved = "en";
+    try { saved = localStorage.getItem(STORAGE_KEY) || "en"; } catch (e) {}
+    applyLanguage(saved);
+
+    var btn = document.getElementById("lang-toggle-btn");
+    if (btn) {
+      btn.addEventListener("click", function () {
+        var current = document.documentElement.getAttribute("lang") === "ar" ? "ar" : "en";
+        applyLanguage(current === "ar" ? "en" : "ar");
+      });
+    }
+  });
 })();
 </script>
 </body></html>
